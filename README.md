@@ -132,11 +132,15 @@ Use the following instructions to start the project with Docker compose.
     pipenv run pre-commit install
     ```
 2. Configure Django
-   1. Create Django local settings file
+   1. Move into the root directory
+   ```
+    cd cc-legal-tools-app
+    ```
+   2. Create Django local settings file
     ```
     cp cc_legal_tools/settings/local.example.py cc_legal_tools/settings/local.py
     ```
-   2. Create project database
+   3. Create project database
       - Linux:
         ```
         sudo createdb -E UTF-8 cc_legal_tools
